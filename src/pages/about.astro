@@ -18,12 +18,7 @@ import { SITE_TITLE } from '../consts';
 
 				<div class="about-content">
 					<div class="avatar-area">
-						<div class="avatar-circle">
-							<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-								<circle cx="50" cy="38" r="22" fill="#C17D5E" opacity="0.3"/>
-								<circle cx="50" cy="90" r="35" fill="#C17D5E" opacity="0.3"/>
-							</svg>
-						</div>
+						<img src="/images/profile.png" alt="ととのう日々" class="avatar-img" />
 						<p class="avatar-name">ととのう日々 管理人</p>
 					</div>
 
@@ -77,17 +72,12 @@ import { SITE_TITLE } from '../consts';
 	.avatar-area {
 		text-align: center;
 	}
-	.avatar-circle {
-		width: 120px;
-		height: 120px;
-		border-radius: 50%;
-		background: var(--accent-light);
+	.avatar-img {
+		width: 160px;
+		height: 160px;
+		object-fit: contain;
 		margin: 0 auto 0.8em;
-		overflow: hidden;
-	}
-	.avatar-circle svg {
-		width: 100%;
-		height: 100%;
+		display: block;
 	}
 	.avatar-name {
 		font-size: 0.85em;
