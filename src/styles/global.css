@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500&display=swap');
+
+:root {
+	--accent: #C17D5E;
+	--accent-dark: #9A5E42;
+	--accent-light: #F0E0D6;
+	--bg: #FAF8F5;
+	--black: 44, 44, 44;
+	--gray: 120, 115, 108;
+	--gray-light: 232, 228, 222;
+	--gray-dark: 60, 56, 50;
+	--white: #ffffff;
+	--box-shadow:
+		0 2px 6px rgba(var(--gray), 15%), 0 8px 24px rgba(var(--gray), 10%);
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background: var(--bg);
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	color: rgb(var(--black));
+	font-size: 18px;
+	line-height: 1.9;
+	font-weight: 300;
+}
+
+main {
+	width: 760px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 3em 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.6rem 0;
+	color: rgb(var(--gray-dark));
+	line-height: 1.4;
+	font-family: 'Shippori Mincho', serif;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.7em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
+
+strong, b { font-weight: 700; }
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+	transition: color 0.2s;
+}
+a:hover { color: var(--accent-dark); }
+
+p { margin-bottom: 1.2em; }
+
+.prose p { margin-bottom: 1.8em; }
+
+textarea {
+	width: 100%;
+	font-size: 16px;
+}
+
+input { font-size: 16px; }
+
+table { width: 100%; }
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+
+code {
+	padding: 2px 5px;
+	background-color: rgb(var(--gray-light));
+	border-radius: 4px;
+	font-size: 0.9em;
+}
+
+pre {
+	padding: 1.5em;
+	border-radius: 12px;
+}
+pre > code { all: unset; }
+
+blockquote {
+	border-left: 3px solid var(--accent);
+	padding: 0.5em 0 0.5em 1.5em;
+	margin: 1.5em 0;
+	font-size: 1.1em;
+	color: rgb(var(--gray));
+	font-style: italic;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid rgb(var(--gray-light));
+	margin: 2em 0;
+}
+
+@media (max-width: 720px) {
+	body { font-size: 16px; }
+	main { padding: 1.5em 1em; }
+}
+
+.sr-only {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}

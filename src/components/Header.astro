@@ -1,0 +1,50 @@
+---
+import { SITE_TITLE } from '../consts';
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<nav>
+		<a href="/" class="site-title">{SITE_TITLE}</a>
+		<div class="internal-links">
+			<HeaderLink href="/">ホーム</HeaderLink>
+			<HeaderLink href="/blog">記事一覧</HeaderLink>
+			<HeaderLink href="/about">プロフィール</HeaderLink>
+		</div>
+	</nav>
+</header>
+
+<style>
+	header {
+		margin: 0;
+		padding: 0 2em;
+		background: white;
+		border-bottom: 1px solid rgb(var(--gray-light));
+	}
+	.site-title {
+		font-family: 'Shippori Mincho', serif;
+		font-size: 1.3em;
+		font-weight: 500;
+		color: rgb(var(--gray-dark));
+		text-decoration: none;
+		letter-spacing: 0.1em;
+		transition: color 0.2s;
+	}
+	.site-title:hover {
+		color: var(--accent);
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 60px;
+	}
+	.internal-links {
+		display: flex;
+		gap: 0.5em;
+	}
+	@media (max-width: 720px) {
+		header { padding: 0 1em; }
+		.site-title { font-size: 1.1em; }
+	}
+</style>

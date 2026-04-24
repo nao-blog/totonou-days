@@ -1,0 +1,62 @@
+---
+const today = new Date();
+---
+
+<footer>
+	<div class="footer-inner">
+		<p class="site-name">ととのう日々</p>
+		<p class="tagline">毎日をちょっとだけ豊かに。</p>
+		<nav class="footer-links">
+			<a href="/">ホーム</a>
+			<a href="/blog">記事一覧</a>
+			<a href="/about">プロフィール</a>
+		</nav>
+		<p class="copyright">&copy; {today.getFullYear()} ととのう日々</p>
+	</div>
+</footer>
+
+<style>
+	footer {
+		background: white;
+		border-top: 1px solid rgb(var(--gray-light));
+		padding: 3em 1em;
+		text-align: center;
+	}
+	.footer-inner {
+		max-width: 760px;
+		margin: auto;
+	}
+	.site-name {
+		font-family: 'Shippori Mincho', serif;
+		font-size: 1.3em;
+		font-weight: 500;
+		color: rgb(var(--gray-dark));
+		letter-spacing: 0.1em;
+		margin: 0 0 0.3em;
+	}
+	.tagline {
+		color: rgb(var(--gray));
+		font-size: 0.9em;
+		margin: 0 0 1.5em;
+	}
+	.footer-links {
+		display: flex;
+		justify-content: center;
+		gap: 2em;
+		margin-bottom: 1.5em;
+	}
+	.footer-links a {
+		color: rgb(var(--gray));
+		font-size: 0.9em;
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+	.footer-links a:hover {
+		color: var(--accent);
+	}
+	.copyright {
+		color: rgb(var(--gray));
+		font-size: 0.8em;
+		margin: 0;
+	}
+</style>

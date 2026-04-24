@@ -1,0 +1,124 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<BaseHead title={`プロフィール | ${SITE_TITLE}`} description="ととのう日々の運営者について" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="about-wrapper">
+				<h1>プロフィール</h1>
+
+				<div class="about-content">
+					<div class="avatar-area">
+						<div class="avatar-circle">
+							<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="50" cy="38" r="22" fill="#C17D5E" opacity="0.3"/>
+								<circle cx="50" cy="90" r="35" fill="#C17D5E" opacity="0.3"/>
+							</svg>
+						</div>
+						<p class="avatar-name">ととのう日々 管理人</p>
+					</div>
+
+					<div class="bio">
+						<p>
+							はじめまして。「ととのう日々」を運営しています。
+						</p>
+						<p>
+							毎日バタバタと過ごしながら、それでも「今日もいい日だった」と思えるような生活を目指しています。
+						</p>
+						<p>
+							このブログでは、私が実際に試してよかった習慣やアイテム、日々の気づきをシェアしています。
+							読んでくれたあなたの毎日が、少しでもととのいますように。
+						</p>
+
+						<div class="topics">
+							<h2>発信テーマ</h2>
+							<ul>
+								<li>🌿 朝・夜のルーティン</li>
+								<li>🏠 部屋づくり・インテリア</li>
+								<li>📚 読書・学び</li>
+								<li>🛍 愛用アイテム紹介</li>
+								<li>💬 メンタル・マインドセット</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.about-wrapper {
+		max-width: 680px;
+		margin: auto;
+	}
+	h1 {
+		font-size: 1.8em;
+		margin-bottom: 2em;
+		padding-bottom: 0.5em;
+		border-bottom: 1px solid rgb(var(--gray-light));
+	}
+	.about-content {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		gap: 3em;
+		align-items: start;
+	}
+	.avatar-area {
+		text-align: center;
+	}
+	.avatar-circle {
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		background: var(--accent-light);
+		margin: 0 auto 0.8em;
+		overflow: hidden;
+	}
+	.avatar-circle svg {
+		width: 100%;
+		height: 100%;
+	}
+	.avatar-name {
+		font-size: 0.85em;
+		color: rgb(var(--gray));
+		margin: 0;
+	}
+	.bio p {
+		color: rgb(var(--gray-dark));
+		line-height: 2;
+	}
+	.topics h2 {
+		font-size: 1em;
+		margin: 1.5em 0 0.8em;
+		color: rgb(var(--gray));
+		font-weight: 400;
+		letter-spacing: 0.05em;
+	}
+	.topics ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.topics li {
+		padding: 0.4em 0;
+		font-size: 0.95em;
+		color: rgb(var(--gray-dark));
+	}
+	@media (max-width: 720px) {
+		.about-content {
+			grid-template-columns: 1fr;
+			gap: 2em;
+		}
+	}
+</style>

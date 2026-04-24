@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: nao-blog/totonou-days
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+locale: ja
+
+collections:
+  - name: blog
+    label: ブログ記事
+    folder: src/content/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: タイトル, name: title, widget: string }
+      - { label: 説明文, name: description, widget: string }
+      - { label: 公開日, name: pubDate, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: アイキャッチ画像, name: heroImage, widget: image, required: false }
+      - { label: 本文, name: body, widget: markdown }
