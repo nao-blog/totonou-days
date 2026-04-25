@@ -7,7 +7,9 @@ import Header from '../components/Header.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
+const now = new Date();
 const allPosts = (await getCollection('blog'))
+	.filter(p => new Date(p.data.pubDate) <= now)
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const pinnedPost = allPosts.find(p => p.data.pinned);
