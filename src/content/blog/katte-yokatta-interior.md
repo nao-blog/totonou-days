@@ -20,6 +20,10 @@ pubDate: '2026-05-01'
 
 **おすすめポイント**: 電球色（オレンジ系）を選ぶと、より落ち着いた雰囲気に。
 
+<div class="affiliate-box">
+<a href="//af.moshimo.com/af/c/click?a_id=5508668&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgo-shi%2Fd-carry-lump%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgo-shi%2Fi%2F10004662%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/go-shi/cabinet/light/carrylump/imgrc0132987602.jpg?_ex=128x128" alt="" style="border:none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=5508668&p_id=54&pc_id=54&pl_id=616" alt="" loading="lazy" width="1" height="1" style="border:0px;">
+</div>
+
 ---
 
 ## 2. アロマディフューザー
