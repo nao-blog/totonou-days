@@ -76,7 +76,7 @@ const slug = Astro.url.pathname.replace('/blog/', '').replace(/\/$/, '');
 								)
 							}
 						</div>
-						<h1>{title}</h1>
+						<h1 set:html={title.replace(/\\n/g, '<br>')} />
 						<PostStats slug={slug} />
 						<hr />
 					</div>
