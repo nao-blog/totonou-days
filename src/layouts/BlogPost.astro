@@ -51,6 +51,25 @@ const slug = Astro.url.pathname.replace('/blog/', '').replace(/\/$/, '');
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
 			}
+			.affiliate-box {
+					display: inline-block;
+					background: #fafafa;
+					border: 1px solid rgb(var(--gray-light));
+					border-radius: 12px;
+					padding: 1em 1.5em;
+					margin: 1em 0;
+					text-align: center;
+				}
+				.affiliate-box a {
+					font-size: 0.85em;
+					color: rgb(var(--gray-dark));
+					text-decoration: none;
+					line-height: 1.6;
+				}
+				.affiliate-box img {
+					border-radius: 8px;
+					margin-bottom: 0.5em;
+				}
 			.last-updated-on {
 				font-style: italic;
 			}
