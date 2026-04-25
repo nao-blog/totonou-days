@@ -7,9 +7,11 @@ import Header from '../components/Header.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
-const posts = (await getCollection('blog'))
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-	.slice(0, 6);
+const allPosts = (await getCollection('blog'))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const pinnedPost = allPosts.find(p => p.data.pinned);
+const posts = allPosts.filter(p => !p.data.pinned).slice(0, 6);
 ---
 
 <!doctype html>
@@ -26,6 +28,21 @@ const posts = (await getCollection('blog'))
 				<p class="hero-desc">励まし×ライフスタイル。心地よい毎日のためのヒントを届けます。</p>
 				<a href="/blog" class="hero-btn">記事を読む</a>
 			</section>
+
+			{pinnedPost && (
+				<section class="pinned-section">
+					<h2 class="section-title">📌 はじめに読んでほしい記事</h2>
+					<a href={`/blog/${pinnedPost.id}/`} class="pinned-card">
+						<div class="pinned-info">
+							<h3 class="pinned-title" set:html={pinnedPost.data.title.replace(/\\n/g, ' ')} />
+							{pinnedPost.data.description && (
+								<p class="pinned-desc">{pinnedPost.data.description}</p>
+							)}
+							<span class="pinned-link">読む →</span>
+						</div>
+					</a>
+				</section>
+			)}
 
 			<section class="recent-posts">
 				<h2 class="section-title">最新の記事</h2>
@@ -61,6 +78,37 @@ const posts = (await getCollection('blog'))
 </html>
 
 <style>
+	.pinned-section {
+		margin-bottom: 3em;
+	}
+	.pinned-card {
+		display: block;
+		background: var(--accent-light);
+		border-left: 4px solid var(--accent);
+		border-radius: 12px;
+		padding: 1.5em 2em;
+		text-decoration: none;
+		color: inherit;
+		transition: transform 0.2s;
+	}
+	.pinned-card:hover {
+		transform: translateY(-2px);
+	}
+	.pinned-title {
+		font-size: 1.2em;
+		margin: 0 0 0.5em;
+		color: rgb(var(--gray-dark));
+	}
+	.pinned-desc {
+		font-size: 0.9em;
+		color: rgb(var(--gray));
+		margin: 0 0 0.8em;
+	}
+	.pinned-link {
+		font-size: 0.85em;
+		color: var(--accent);
+	}
+
 	.hero {
 		text-align: center;
 		padding: 4em 1em 3em;
