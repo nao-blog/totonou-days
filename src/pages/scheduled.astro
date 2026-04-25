@@ -39,7 +39,7 @@ const publishedPosts = (await getCollection('blog'))
 										<FormattedDate date={post.data.pubDate} />
 									</div>
 									<div class="post-info">
-										<p class="post-title">{post.data.title.replace(/\\n/g, ' ')}</p>
+										<a href={`/blog/${post.id}/`} class="post-title">{post.data.title.replace(/\\n/g, ' ')}</a>
 										<p class="post-desc">{post.data.description}</p>
 									</div>
 									<span class="badge scheduled-badge">予約済</span>
