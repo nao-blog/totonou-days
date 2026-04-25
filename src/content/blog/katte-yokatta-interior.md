@@ -31,7 +31,7 @@ pubDate: '2026-05-01'
 **おすすめの香り**: ラベンダー（リラックス）、ユーカリ（リフレッシュ）、ヒノキ（落ち着き）
 
 <div class="affiliate-box">
-<a href="//af.moshimo.com/af/c/click?a_id=5508668&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobile123%2Fb1444ardfn%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobile123%2Fi%2F10001823%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/mobile123/cabinet/bellemond/b14/b1444_1.jpg?_ex=128x128" alt="AROMA FLOW アロマディフューザー" style="border:none;" /><br>【楽天1位】AROMA FLOW アロマディフューザー 水なし コードレス 木製</a><img src="//i.moshimo.com/af/i/impression?a_id=5508668&p_id=54&pc_id=54&pl_id=616" alt="" loading="lazy" width="1" height="1" style="border:0px;">
+<a href="//af.moshimo.com/af/c/click?a_id=5508668&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobile123%2Fb1444ardfn%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobile123%2Fi%2F10001823%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/mobile123/cabinet/bellemond/b14/b1444_1.jpg?_ex=128x128" alt="" style="border:none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=5508668&p_id=54&pc_id=54&pl_id=616" alt="" loading="lazy" width="1" height="1" style="border:0px;">
 </div>
 
 ---
