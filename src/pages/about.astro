@@ -44,6 +44,13 @@ import { SITE_TITLE } from '../consts';
 								<li>💬 メンタル・マインドセット</li>
 							</ul>
 						</div>
+
+						<div class="sns">
+							<h2>SNS</h2>
+							<a href="https://x.com/totonou_days_jp" target="_blank" rel="noopener noreferrer" class="sns-link">
+								𝕏 @totonou_days_jp
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -105,6 +112,23 @@ import { SITE_TITLE } from '../consts';
 		padding: 0.4em 0;
 		font-size: 0.95em;
 		color: rgb(var(--gray-dark));
+	}
+	.sns h2 {
+		font-size: 1em;
+		margin: 1.5em 0 0.8em;
+		color: rgb(var(--gray));
+		font-weight: 400;
+		letter-spacing: 0.05em;
+	}
+	.sns-link {
+		font-size: 0.95em;
+		color: rgb(var(--gray-dark));
+		text-decoration: none;
+		border-bottom: 1px solid rgb(var(--gray-light));
+		padding-bottom: 2px;
+	}
+	.sns-link:hover {
+		color: var(--accent);
 	}
 	@media (max-width: 720px) {
 		.about-content {
