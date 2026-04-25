@@ -27,6 +27,8 @@ pubDate: '2026-04-21'
 ### 1. キャンドルまたはアロマストーン（300〜500円）
 視覚と嗅覚に働きかけ、リラックスモードに切り替えてくれます。火が怖ければ、アロマストーンにエッセンシャルオイルを垂らすだけで十分。
 
+👉 [ダイソー｜アロマキャンドル（110円）](https://jp.daisonet.com/products/4550480937267)
+
 <div class="affiliate-box">
 <a href="//af.moshimo.com/af/c/click?a_id=5508668&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoona%2Fo001-20%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcoona%2Fi%2F10000236%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/coona/cabinet/05297849/beads-1-new.jpg?_ex=128x128" alt="" style="border:none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=5508668&p_id=54&pc_id=54&pl_id=616" alt="" loading="lazy" width="1" height="1" style="border:0px;">
 </div>
