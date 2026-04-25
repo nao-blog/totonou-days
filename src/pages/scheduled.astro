@@ -1,0 +1,158 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const now = new Date();
+const scheduledPosts = (await getCollection('blog'))
+	.filter(p => new Date(p.data.pubDate) > now)
+	.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+const publishedPosts = (await getCollection('blog'))
+	.filter(p => new Date(p.data.pubDate) <= now)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<BaseHead title="投稿管理 | ととのう日々" description="管理用ページ" />
+		<meta name="robots" content="noindex, nofollow" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="admin-wrapper">
+				<h1>📋 投稿管理</h1>
+
+				<section class="section">
+					<h2 class="section-title scheduled">⏰ 投稿予定（{scheduledPosts.length}件）</h2>
+					{scheduledPosts.length === 0 ? (
+						<p class="empty">予約投稿はありません</p>
+					) : (
+						<ul class="post-list">
+							{scheduledPosts.map(post => (
+								<li class="post-item scheduled-item">
+									<div class="post-date">
+										<FormattedDate date={post.data.pubDate} />
+									</div>
+									<div class="post-info">
+										<p class="post-title">{post.data.title.replace(/\\n/g, ' ')}</p>
+										<p class="post-desc">{post.data.description}</p>
+									</div>
+									<span class="badge scheduled-badge">予約済</span>
+								</li>
+							))}
+						</ul>
+					)}
+				</section>
+
+				<section class="section">
+					<h2 class="section-title published">✅ 公開済み（{publishedPosts.length}件）</h2>
+					<ul class="post-list">
+						{publishedPosts.map(post => (
+							<li class="post-item">
+								<div class="post-date">
+									<FormattedDate date={post.data.pubDate} />
+								</div>
+								<div class="post-info">
+									<a href={`/blog/${post.id}/`} class="post-title">{post.data.title.replace(/\\n/g, ' ')}</a>
+									<p class="post-desc">{post.data.description}</p>
+								</div>
+								<span class="badge published-badge">公開中</span>
+							</li>
+						))}
+					</ul>
+				</section>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.admin-wrapper {
+		max-width: 760px;
+		margin: auto;
+	}
+	h1 {
+		font-size: 1.6em;
+		margin-bottom: 2em;
+		padding-bottom: 0.5em;
+		border-bottom: 1px solid rgb(var(--gray-light));
+	}
+	.section {
+		margin-bottom: 3em;
+	}
+	.section-title {
+		font-size: 1em;
+		font-weight: 500;
+		letter-spacing: 0.05em;
+		margin-bottom: 1em;
+		padding: 0.5em 1em;
+		border-radius: 8px;
+	}
+	.section-title.scheduled {
+		background: #FFF3E0;
+		color: #E65100;
+	}
+	.section-title.published {
+		background: #E8F5E9;
+		color: #2E7D32;
+	}
+	.post-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.post-item {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+		padding: 1em;
+		border-bottom: 1px solid rgb(var(--gray-light));
+	}
+	.post-date {
+		font-size: 0.8em;
+		color: rgb(var(--gray));
+		min-width: 90px;
+	}
+	.post-info {
+		flex: 1;
+	}
+	.post-title {
+		font-size: 0.95em;
+		color: rgb(var(--gray-dark));
+		margin: 0 0 0.2em;
+		font-weight: 500;
+		text-decoration: none;
+	}
+	a.post-title:hover {
+		color: var(--accent);
+	}
+	.post-desc {
+		font-size: 0.8em;
+		color: rgb(var(--gray));
+		margin: 0;
+	}
+	.badge {
+		font-size: 0.75em;
+		padding: 0.3em 0.8em;
+		border-radius: 100px;
+		white-space: nowrap;
+	}
+	.scheduled-badge {
+		background: #FFF3E0;
+		color: #E65100;
+	}
+	.published-badge {
+		background: #E8F5E9;
+		color: #2E7D32;
+	}
+	.empty {
+		color: rgb(var(--gray));
+		font-size: 0.9em;
+	}
+</style>
