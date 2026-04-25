@@ -1,0 +1,92 @@
+---
+const { slug } = Astro.props;
+---
+
+<div class="post-stats" data-slug={slug}>
+  <span class="stat views-stat">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+      <circle cx="12" cy="12" r="3"/>
+    </svg>
+    <span class="views-count">—</span>
+  </span>
+
+  <button class="stat like-btn" aria-label="いいね">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+    </svg>
+    <span class="likes-count">—</span>
+  </button>
+</div>
+
+<script>
+  const container = document.querySelector('.post-stats') as HTMLElement;
+  const slug = container?.dataset.slug;
+
+  async function loadStats() {
+    const [viewsRes, likesRes] = await Promise.all([
+      fetch(`/api/views/${slug}`, { method: 'POST' }),
+      fetch(`/api/likes/${slug}`),
+    ]);
+    const { views } = await viewsRes.json();
+    const { likes } = await likesRes.json();
+    document.querySelector('.views-count')!.textContent = `${views}`;
+    document.querySelector('.likes-count')!.textContent = `${likes}`;
+  }
+
+  const likeBtn = document.querySelector('.like-btn') as HTMLButtonElement;
+  const likedKey = `liked:${slug}`;
+
+  if (localStorage.getItem(likedKey)) {
+    likeBtn?.classList.add('liked');
+  }
+
+  likeBtn?.addEventListener('click', async () => {
+    if (localStorage.getItem(likedKey)) return;
+    localStorage.setItem(likedKey, '1');
+    likeBtn.classList.add('liked');
+    const res = await fetch(`/api/likes/${slug}`, { method: 'POST' });
+    const { likes } = await res.json();
+    document.querySelector('.likes-count')!.textContent = `${likes}`;
+  });
+
+  loadStats();
+</script>
+
+<style>
+  .post-stats {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    margin: 1em 0;
+    color: rgb(var(--gray));
+    font-size: 0.9em;
+  }
+  .stat {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+  }
+  .like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    color: rgb(var(--gray));
+    font-size: 0.9em;
+    padding: 0;
+    transition: color 0.2s;
+  }
+  .like-btn:hover {
+    color: #e05c7a;
+  }
+  .like-btn.liked {
+    color: #e05c7a;
+  }
+  .like-btn.liked svg {
+    fill: #e05c7a;
+    stroke: #e05c7a;
+  }
+</style>
