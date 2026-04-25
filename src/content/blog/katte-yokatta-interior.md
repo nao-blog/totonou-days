@@ -47,6 +47,10 @@ pubDate: '2026-05-01'
 
 「これで飲むと美味しく感じる」というマグカップが1つあるだけで、朝のコーヒータイムが特別になります。
 
+<div class="affiliate-box">
+<a href="//af.moshimo.com/af/c/click?a_id=5508668&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbellevie-shop%2Fetc0017%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbellevie-shop%2Fi%2F10000422%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/bellevie-shop/cabinet/etc_image6/500etc0017_2604md.jpg?_ex=128x128" alt="" style="border:none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=5508668&p_id=54&pc_id=54&pl_id=616" alt="" loading="lazy" width="1" height="1" style="border:0px;">
+</div>
+
 ---
 
 ## 4. 観葉植物（ポトスまたはサンスベリア）
