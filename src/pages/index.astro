@@ -43,7 +43,7 @@ const posts = (await getCollection('blog'))
 							)}
 							<div class="post-info">
 								<p class="post-date"><FormattedDate date={post.data.pubDate} /></p>
-								<h3 class="post-title">{post.data.title}</h3>
+								<h3 class="post-title" set:html={post.data.title.replace(/\\n/g, ' ')} />
 								{post.data.description && (
 									<p class="post-desc">{post.data.description}</p>
 								)}
