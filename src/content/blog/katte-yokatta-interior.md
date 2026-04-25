@@ -70,6 +70,10 @@ pubDate: '2026-05-01'
 
 リモコン、スマホ、鍵などをトレイの上にまとめるだけで、部屋がすっきり見えます。木製やラタン素材のものを選ぶと、インテリアになじみやすいです。
 
+<div class="affiliate-box">
+<a href="//af.moshimo.com/af/c/click?a_id=5508668&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkaguzaku%2Fyj-2300%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkaguzaku%2Fi%2F10005693%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/kaguzaku/cabinet/01023319k/02707641k/05876673/yj-2300_top.jpg?_ex=128x128" alt="" style="border:none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=5508668&p_id=54&pc_id=54&pl_id=616" alt="" loading="lazy" width="1" height="1" style="border:0px;">
+</div>
+
 ---
 
 ## まとめ
