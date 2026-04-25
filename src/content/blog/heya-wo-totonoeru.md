@@ -42,6 +42,7 @@ pubDate: '2026-04-21'
 天井の蛍光灯だけではなく、足元や棚の上に小さなライトをひとつ。夜の部屋の雰囲気が一気に変わります。
 
 👉 [ダイソー｜間接照明（550円）](https://jp.daisonet.com/products/4971275816527)
+👉 [Watts｜間接照明（110円）](https://watts-online.jp/products/26279)
 
 ---
 
