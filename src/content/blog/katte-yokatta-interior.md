@@ -55,6 +55,12 @@ pubDate: '2026-05-01'
 
 ポトスは水やりが週1〜2回でOKで、日陰でも育つ初心者向けの植物。サンスベリアは空気清浄効果もあると言われています。
 
+母の日のプレゼントにもぴったりです。
+
+<div class="affiliate-box">
+<a href="//af.moshimo.com/af/c/click?a_id=5508668&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fokabegreen%2Fss-154-5%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fokabegreen%2Fi%2F10000169%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/okabegreen/cabinet/-ibento_bana-/motherday/ss-154-5-haha.jpg?_ex=128x128" alt="" style="border:none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=5508668&p_id=54&pc_id=54&pl_id=616" alt="" loading="lazy" width="1" height="1" style="border:0px;">
+</div>
+
 ---
 
 ## 5. トレイ（小物をまとめる）
