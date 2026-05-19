@@ -4,6 +4,8 @@ description: '平日は無理でいい。休日の朝だけ、少しだけ丁寧
 pubDate: '2026-05-10'
 ---
 
+<p style="font-size:0.8em; color:#999; margin-bottom:1.5em;">※本記事はアフィリエイト広告（PR）を含みます。</p>
+
 平日の朝は、バタバタでいい。
 
 でも、休日の朝だけは少しだけ丁寧に過ごしてみる。
@@ -35,6 +37,9 @@ pubDate: '2026-05-10'
 <a href="//af.moshimo.com/af/c/click?a_id=5508668&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fgourmetcoffee%2F1010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgourmetcoffee%2Fi%2F10005824%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/gourmetcoffee/cabinet/1000/1066r.jpg?_ex=128x128" alt="" style="border:none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=5508668&p_id=54&pc_id=54&pl_id=616" alt="" loading="lazy" width="1" height="1" style="border:0px;">
 <a href="//af.moshimo.com/af/c/click?a_id=5508668&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Funibuy%2Fcoffepot-s5%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Funibuy%2Fi%2F10000191%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/unibuy/cabinet/biiino/item/main-image/20221107102409_1.jpg?_ex=128x128" alt="" style="border:none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=5508668&p_id=54&pc_id=54&pl_id=616" alt="" loading="lazy" width="1" height="1" style="border:0px;">
 </div>
+
+<p style="text-align:center; margin:1.5em 0;"><span style="display:block; font-size:0.75em; color:#999; margin-bottom:0.3em;">- PR -</span>
+<a href="https://px.a8.net/svt/ejp?a8mat=4B3U7A+6S3QSY+3NWC+631SX" rel="nofollow"><img border="0" width="300" height="250" alt="INICコーヒー" src="https://www21.a8.net/svt/bgt?aid=260519590410&wid=001&eno=01&mid=s00000017094001022000&mc=1"></a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B3U7A+6S3QSY+3NWC+631SX" alt=""></p>
 
 ---
 
