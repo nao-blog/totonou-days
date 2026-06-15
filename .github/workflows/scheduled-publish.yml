@@ -1,11 +1,12 @@
 name: 予約投稿 自動ビルド
 
 on:
-  schedule:
-    - cron: '0 3 * * 3'   # 水曜日 12:00 JST
-    - cron: '0 12 * * 5'  # 金曜日 21:00 JST
-    - cron: '0 10 * * 0'  # 日曜日 19:00 JST
-  workflow_dispatch:       # 手動実行も可能
+  # スケジュールは一時停止中（再開時はナオさんからの指示）
+  # schedule:
+  #   - cron: '0 3 * * 3'   # 水曜日 12:00 JST
+  #   - cron: '0 12 * * 5'  # 金曜日 21:00 JST
+  #   - cron: '0 10 * * 0'  # 日曜日 19:00 JST
+  workflow_dispatch:       # 手動実行のみ
 
 jobs:
   deploy:
